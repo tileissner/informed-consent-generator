@@ -10,7 +10,27 @@ import badges from "./badges";
 export class ConsentForm extends React.Component {
   constructor(props) {
     super(props);
+
+    this.state = {
+      selectedBadges: []
+    };
   }
+
+  checkBoxClick = badge => {
+    console.log("badge", badge);
+
+    //check if array already contains badge
+
+    //add this to array
+    let badges = this.state.selectedBadges;
+    badges.push(badge);
+  };
+
+  submit = () => {
+    console.log(this.state.selectedBadges);
+
+    console.log(JSON.stringify(this.state.selectedBadges));
+  };
 
   render() {
     const stringItems = badges.badge.map((badge, index) => {
@@ -22,13 +42,18 @@ export class ConsentForm extends React.Component {
               <div className="glyphRight">
                 <Glyphicon glyph="triangle-bottom" />
               </div>
-
             </Panel.Title>
           </Panel.Heading>
           <Panel.Collapse>
-            <Panel.Body >
+            <Panel.Body>
+              <div>
                 {badge.explanationUser}
-                </Panel.Body>
+                <input
+                  type="checkbox"
+                  onClick={() => this.checkBoxClick(badge)}
+                />
+              </div>
+            </Panel.Body>
           </Panel.Collapse>
         </Panel>
       );
@@ -39,6 +64,7 @@ export class ConsentForm extends React.Component {
         <PanelGroup accordion id="accordion-example">
           {stringItems}
         </PanelGroup>
+        <input type="button" onClick={this.submit} />
       </div>
     );
   }
