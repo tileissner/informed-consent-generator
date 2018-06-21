@@ -1,0 +1,79 @@
+.App {
+  text-align: center;
+}
+
+.App-logo {
+  animation: App-logo-spin infinite 20s linear;
+  height: 80px;
+}
+
+.App-header {
+  background-color: #222;
+  height: 150px;
+  padding: 20px;
+  color: white; 
+}
+
+.App-title {
+  font-size: 1.5em;
+}
+
+.App-intro {
+  font-size: large;
+}
+
+@keyframes App-logo-spin {
+  from { transform: rotate(0deg); }
+  to { transform: rotate(360deg); }
+}
+
+
+.scroll {
+  max-height: 250px;
+  overflow-y:scroll;
+
+}
+
+.test123 {
+   max-width: 400;
+   margin: 0 auto 0;
+  }
+
+.btTest {}
+
+.textFormat{text-align: justify;}
+
+.grid-container{
+  display: inline-grid;
+  grid-template-columns: 33% 33% 33%;
+}
+
+#grid-item1{
+  background-color: gray;
+}
+#grid-item2{
+  background-color:darkgray;
+}
+#grid-item3{
+  background-color:black;
+}
+
+.cBox{
+ background-color: white;
+}
+
+
+#collapsible-panel-example-2{
+  padding: 0px;
+  margin: 0px;
+}
+
+.glyphRight{
+  float:right;
+}
+
+
+img{
+  width: 200px;
+  height: 200px;
+}
