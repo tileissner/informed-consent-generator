@@ -38,6 +38,7 @@ export class ConsentForm extends React.Component {
   render() {
 
 
+
   const category = badges.badgeCategory.map((badgeCategory, index) => {
   //  console.log(badgeCategory.cat);
       return (
@@ -71,7 +72,6 @@ export class ConsentForm extends React.Component {
       
     });
     console.log(bCat); 
-    
 
     const descriptionImage2 = badges.badge.map((badge, index) => {
     // console.log(bCat);
@@ -79,6 +79,8 @@ export class ConsentForm extends React.Component {
       
       if (badge.badgeCategory==="purpose"){
         //console.log(bCat);
+
+        return(   //return funktioniert nicht
         <div class="grid-container" key={index}>                 
                 <div class="grid-item1">
                 
@@ -98,8 +100,7 @@ export class ConsentForm extends React.Component {
                 />
                 </div>
         </div>
-        return;
-        }
+       ); }
         else return null;
      }
   );
