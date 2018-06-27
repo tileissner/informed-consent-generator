@@ -1,17 +1,16 @@
 export default {
   badgeCategory: [
-    "dataSubjectRights",
-    "purpose",
-    "storingDuration",
-    "dataSource",
-    "scale",
-    "techServices"
+    { cat:"purpose"},
+    { cat:"storingDuration"},
+    { cat:"dataSource"},
+    { cat:"scale"},
+    { cat:"techServices"}
   ],
 
   badge: [
     {
       badgeName: "storing1mth",
-      "img-url": "",
+      imgURL: "/images/storingDuration/time1mth.png",
       descriptionProvider:
         "All of the collected user data is stored for 1 month",
       explanationUser: "All of the collected user data is stored for 1 month",
@@ -19,216 +18,229 @@ export default {
     },
     {
       badgeName: "storing1year",
-      "img-url": "",
+      imgURL: "./images/storingDuration/time1yr.png",
       descriptionProvider:
         "All of the collected user data is stored for 1 year",
       explanationUser: "All of the collected user data is stored for 1 year",
       badgeCategory: "storingDuration"
     },
     {
-      badgeName: "storingSession",
-      "img-url": "",
+      badgeName: "storingAccount",
+      imgURL: "./images/storingDuration/timelim.png",
       descriptionProvider:
-        "All of the collected user data is stored for this exact usage session. As soon as the user logs off the service the before needed data is deleted instantaneously",
+        "All of the collected user data is stored for as long as the account exists. Upon user-originated account deletion the before needed data has to be deleted instantaneously",
       explanationUser:
-        "All of the collected user data is stored for this exact usage session. As soon as you log off the service the before needed data is deleted instantaneously",
+        "All of the collected user data is stored for as long as the account exists. Upon user-originated account deletion the before needed data will be deleted instantaneously",
       badgeCategory: "storingDuration"
     },
     {
       badgeName: "storingUnlimited",
-      "img-url": "",
+      imgURL: "./images/storingDuration/timeinfinity.png",
       descriptionProvider:
         "All of the collected user data is stored for an unspecified period of time. If this is the case you are legally obligated by the GDPR to list the reasoning/criteria for storing specific data. We recommend linking to the specific passage in your TOS and showing it alongside the badges",
       explanationUser:
-        "All of the collected user data is stored for a not further constrained period of time. However you possess the right to ask the service provider for the reasoning of storing specific data. The service provider is legally obligated to do so and can not refuse your request",
+        "All of the collected user data is stored for a not further constrained period of time. However the service provider is legally obligated to list the criteria for storing specific data. Find out about our reasoning for storing duration.",
       badgeCategory: "storingDuration"
     },
 
     {
-      badgeName: "rightOfErasure",
-      "img-url": "x",
-      descriptionProvider:
-        "The service provider is legally obligated to delete data if the user wishes his data to be erased.",
-      explanationUser:
-        "If you want to stop using our service and want us to delete your data we are legally bound to do so. If you want to read further into this take a look at the GDPR Art. X",
-      badgeCategory: "dataSubjectRights"
-    },
-    {
-      badgeName: "dataPortability",
-      "img-url": "x",
-      descriptionProvider: "",
-      explanationUser: "",
-      badgeCategory: "dataSubjectRights"
-    },
-    {
-      badgeName: "rightToAccess",
-      "img-url": "x",
-      descriptionProvider: "",
-      explanationUser: "",
-      badgeCategory: "dataSubjectRights"
-    },
-    {
-      badgeName: "rightToBeInformed",
-      "img-url": "x",
-      descriptionProvider: "",
-      explanationUser: "",
-      badgeCategory: "dataSubjectRights"
-    },
-    {
-      badgeName: "rightToObject",
-      "img-url": "x",
-      descriptionProvider: "",
-      explanationUser: "",
-      badgeCategory: "dataSubjectRights"
-    },
-    {
-      badgeName: "rightToRectification",
-      "img-url": "x",
-      descriptionProvider: "",
-      explanationUser: "",
-      badgeCategory: "dataSubjectRights"
-    },
-    {
-      badgeName: "rightToRestrictProcessing",
-      "img-url": "x",
-      descriptionProvider: "",
-      explanationUser: "",
-      badgeCategory: "dataSubjectRights"
-    },
-
-    {
       badgeName: "feedback",
-      "img-url": "x",
+      imgURL: "",
       descriptionProvider:
-        "User data is stored and analyzed to give the user feedback on ",
+        "User data is stored and analyzed to give the user feedback.",
       explanationUser: "",
       badgeCategory: "purpose"
     },
     {
       badgeName: "rating",
-      "img-url": "x",
-      descriptionProvider: "User data is stored and analyzed to",
+      imgURL: "x",
+      descriptionProvider: "User data is processed to rate the users performance.",
       explanationUser: "",
       badgeCategory: "purpose"
     },
     {
       badgeName: "predictionTrends",
-      "img-url": "x",
-      descriptionProvider: "User data is stored and analyzed to ",
+      imgURL: "x",
+      descriptionProvider: "User data is processed to give the user a prediction based on past activity",
       explanationUser: "",
       badgeCategory: "purpose"
     },
     {
-      badgeName: "recommendation",
-      "img-url": "x",
-      descriptionProvider: "User data is stored and analyzed to",
+      badgeName: "recommendationAds",
+      imgURL: "x",
+      descriptionProvider: "User data is processed to personalize ads and recommendations based on the users personal preferences.",
+      explanationUser: "",
+      badgeCategory: "purpose"
+    },
+    {
+      badgeName: "improveDevelopService",
+      imgURL: "",
+      descriptionProvider: "User data is processed to improve the providers services or develop entirely new services based on the users needs",
+      explanationUser: "",
+      badgeCategory: "purpose"
+    },
+    {
+      badgeName: "improveSecurity",
+      imgURL: "",
+      descriptionProvider: "User data is processed to improve security",
+      explanationUser: "",
+      badgeCategory: "purpose"
+    },
+    {
+      badgeName: "personalization",
+      imgURL: "",
+      descriptionProvider: "User data is processed to give the user a personalized version of the service",
       explanationUser: "",
       badgeCategory: "purpose"
     },
 
     {
+      badgeName: "bigData",
+      imgURL: "x",
+      descriptionProvider: "",
+      explanationUser: "",
+      badgeCategory: "techServices"
+    },
+    {
       badgeName: "machineLearning",
-      "img-url": "x",
+      imgURL: "x",
       descriptionProvider: "",
       explanationUser: "",
       badgeCategory: "techServices"
     },
     {
       badgeName: "blockchain",
-      "img-url": "x",
+      imgURL: "x",
       descriptionProvider: "",
       explanationUser: "",
       badgeCategory: "techServices"
     },
     {
       badgeName: "manualProcessing",
-      "img-url": "x",
+      imgURL: "x",
       descriptionProvider: "",
       explanationUser: "",
       badgeCategory: "techServices"
     },
     {
       badgeName: "otherAutomatedProcessing",
-      "img-url": "x",
+      imgURL: "x",
       descriptionProvider: "",
       explanationUser: "",
       badgeCategory: "techServices"
     },
     {
       badgeName: "3rdPartyServices",
-      "img-url": "x",
+      imgURL: "x",
       descriptionProvider: "",
       explanationUser: "",
       badgeCategory: "techServices"
     },
     {
       badgeName: "cookies",
-      "img-url": "",
+      imgURL: "",
       descriptionProvider: "",
       explanationUser: "",
       badgeCategory: "techServices"
     },
-
+    
     {
       badgeName: "nrOfLogins",
-      "img-url": "x",
+      imgURL: "x",
       descriptionProvider: "",
       explanationUser: "",
       badgeCategory: "dataSource"
     },
     {
       badgeName: "onlineTime",
-      "img-url": "x",
+      imgURL: "x",
       descriptionProvider: "",
       explanationUser: "",
       badgeCategory: "dataSource"
     },
     {
       badgeName: "text",
-      "img-url": "x",
+      imgURL: "x",
       descriptionProvider: "",
       explanationUser: "",
       badgeCategory: "dataSource"
     },
     {
       badgeName: "querys",
-      "img-url": "x",
+      imgURL: "x",
       descriptionProvider: "",
       explanationUser: "",
       badgeCategory: "dataSource"
     },
     {
       badgeName: "videoInteraction",
-      "img-url": "x",
+      imgURL: "x",
       descriptionProvider: "",
       explanationUser: "",
       badgeCategory: "dataSource"
     },
     {
-      badgeName: "whichServices",
-      "img-url": "x",
+      badgeName: "whichServicesAreUsed",
+      imgURL: "x",
+      descriptionProvider: "",
+      explanationUser: "",
+      badgeCategory: "dataSource"
+    },
+    {
+      badgeName: "deviceID",
+      imgURL: "",
+      descriptionProvider: "",
+      explanationUser: "",
+      badgeCategory: "dataSource"
+    },
+    {
+      badgeName: "IPAdr",
+      imgURL: "",
+      descriptionProvider: "",
+      explanationUser: "",
+      badgeCategory: "dataSource"
+    },
+    {
+      badgeName: "location",
+      imgURL: "",
+      descriptionProvider: "",
+      explanationUser: "",
+      badgeCategory: "dataSource"
+    },
+    {
+      badgeName: "browserFingerprint",
+      imgURL: "",
+      descriptionProvider: "",
+      explanationUser: "",
+      badgeCategory: "dataSource"
+    },
+    {
+      badgeName: "userSpecifiedData",
+      imgURL: "",
       descriptionProvider: "",
       explanationUser: "",
       badgeCategory: "dataSource"
     },
 
+
+
     {
       badgeName: "3rdParty",
-      "img-url": "x",
+      imgURL: "",
       descriptionProvider: "",
       explanationUser: "",
       badgeCategory: "scale"
     },
     {
       badgeName: "comparisonToOthers",
-      "img-url": "x",
+      imgURL: "",
       descriptionProvider: "",
       explanationUser: "",
       badgeCategory: "scale"
     },
     {
       badgeName: "anonymization",
-      "img-url": "x",
+      imgURL: "",
       descriptionProvider: "",
       explanationUser: "",
       badgeCategory: "scale"
