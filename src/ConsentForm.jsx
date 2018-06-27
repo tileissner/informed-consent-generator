@@ -71,16 +71,18 @@ export class ConsentForm extends React.Component {
       return catArr;
       
     });
-    console.log(bCat); 
+    // console.log(bCat); 
 
-    const descriptionImage2 = badges.badge.map((badge, index) => {
+
+    const descriptionImage2 = badges.badge.filter((badge, index) => {
     // console.log(bCat);
     // console.log(badge.badgeCategory);
       
-      if (badge.badgeCategory==="purpose"){
-        //console.log(bCat);
+      //elemente von bCat nacheinander mit badge.badgeCategory
+      if (badge.badgeCategory==="purpose"|| badge.badgeCategory==="storingDuration" ){
+        // console.log(bCat);
 
-        return(   //return funktioniert nicht
+        return (   //return funktioniert nicht
         <div class="grid-container" key={index}>                 
                 <div class="grid-item1">
                 
@@ -100,10 +102,12 @@ export class ConsentForm extends React.Component {
                 />
                 </div>
         </div>
-       ); }
-        else return null;
+        );}
+       
      }
   );
+
+  console.log(descriptionImage2); //if abfrage und filter funktioniert
  
   // const category = badges.badge.map((badge, index) => {
   // //  console.log(badgeCategory.cat);
