@@ -73,13 +73,17 @@ export class ConsentForm extends React.Component {
     });
     // console.log(bCat); 
 
+let descriptionImage2 = [];
 
-    const descriptionImage2 = badges.badge.filter((badge, index) => {
+for (var i=0; i < bCat.length; i++) {
+    
+
+    descriptionImage2 = badges.badge.filter((badge, index) => {
     // console.log(bCat);
     // console.log(badge.badgeCategory);
       
       //elemente von bCat nacheinander mit badge.badgeCategory
-      if (badge.badgeCategory==="purpose"|| badge.badgeCategory==="storingDuration" ){
+      if (badge.badgeCategory===bCat[i]){
         // console.log(bCat);
 
         return (   //return funktioniert nicht
@@ -103,11 +107,11 @@ export class ConsentForm extends React.Component {
                 </div>
         </div>
         );}
-       
      }
   );
+  console.log(descriptionImage2);} //if abfrage, filter und loop funktionieren
 
-  console.log(descriptionImage2); //if abfrage und filter funktioniert
+  // console.log(descriptionImage2);
  
   // const category = badges.badge.map((badge, index) => {
   // //  console.log(badgeCategory.cat);
